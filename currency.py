@@ -14,7 +14,7 @@ import io
 def start():
  print('********************* Digital currencies 🪙 *********************')
  print('|-------------------------------|------------------------------------------|')
- print('|1) add online coin             |2) get info about your Digital currencies|')
+ print('|1) add online coin             |2) get info about your Digital currencies |')
  print('|-------------------------------|------------------------------------------|')
  print('|3) favourite list              |4) show the plot                          |')
  print('|-------------------------------|------------------------------------------|')
