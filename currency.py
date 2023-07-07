@@ -141,17 +141,7 @@ def start():
             plt.plot(x3, y3, '-go', markersize=5)  # green line with circles
             plt.plot([x1[0], x2[0], x3[0]], [y1[0], y2[0], y3[0]], '-y')  # connect these dot with themselves
             plt.show()
-            
-            #bonus feature [[[[TODO NOT FINNISH]]]]
-            x = np.array([DateLast.timestamp(), DateNow.timestamp()])
-            slope, intercept = np.polyfit(x, [PriceLast, PriceNow], 1)
-            future_dates = [DateNow + datetime.timedelta(days=i) for i in range(1, 8)]
-            future_x = np.array([d.timestamp() for d in future_dates])
-            future_y = slope * future_x + intercept
-            plt.plot(future_dates, future_y, 'r--', label='Forecast')
-            plt.legend()
-            plt.show()
-            
+           
             start()
             
     case 3:  ####################################################################################### third part
